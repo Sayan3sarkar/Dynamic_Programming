@@ -16,4 +16,4 @@ According to educative.io,
         * Equal Partition Sum
         * Count of Subsets with given sum
         * Minimum Subset Sum Difference
-2. 
+        * Count of Subsets with given difference(aanother variation of exact same problem is Target Sum) 
