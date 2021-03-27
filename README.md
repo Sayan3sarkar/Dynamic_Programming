@@ -11,9 +11,13 @@ According to educative.io,
         * Recursive
         * Memoization(Top-Down approach)
         * Tabulation(Bottom-Up approach)
-    * Subset_Sum(all using Tabulation)
+    * Subset_Sum(all using Tabulation)(variations of 0/1 Knapsack)
         * Is Subset Sum
         * Equal Partition Sum
         * Count of Subsets with given sum
         * Minimum Subset Sum Difference
-        * Count of Subsets with given difference(aanother variation of exact same problem is Target Sum) 
+        * Count of Subsets with given difference(another variation of exact same problem is Target Sum)
+    * Unbounded Knapsack
+        * Rod Cutting
+        * Coin Change: Max number of coins
+        * Coin change: Min number of coins
