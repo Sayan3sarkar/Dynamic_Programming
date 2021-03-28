@@ -1,4 +1,4 @@
-def knapSackDP(wt,val,W,n):
+def unboundedKnapSackDP(wt,val,W,n):
     t = [[0 for j in range(W+1)] for i in range(n+1)] # Initialisation of matrix with 0
 
     for i in range(n+1):
@@ -19,4 +19,4 @@ val = [60, 100, 120]
 wt = [10, 20, 30]
 W = 50
 n = len(val)
-print(knapSackDP(wt, val, W, 3))
+print(unboundedKnapSackDP(wt, val, W, 3))

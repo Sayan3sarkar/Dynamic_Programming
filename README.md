@@ -18,6 +18,6 @@ According to educative.io,
         * Minimum Subset Sum Difference
         * Count of Subsets with given difference(another variation of exact same problem is Target Sum)
     * Unbounded Knapsack
-        * Rod Cutting
-        * Coin Change: Max number of coins
+        * Rod Cutting(Literally Unbounded knapsack but with another name)
+        * Coin Change: Max number of ways(Unbounded knapsack version of ***Count of Subsets with given sum*** problem)
         * Coin change: Min number of coins
