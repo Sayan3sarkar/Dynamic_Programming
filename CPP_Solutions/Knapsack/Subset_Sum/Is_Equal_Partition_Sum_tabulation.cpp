@@ -14,15 +14,10 @@ bool isSubsetSum(int arr[], int sum, int n){
         t[0][j] = false; // Fill first row except first element with false
         
     // Main iterative code
-    for(int i = 1; i< n+1 ; i++){
-        for(int j = 1; j< sum + 1; j++){
+    for(int i = 1; i< n+1 ; i++)
+        for(int j = 1; j< sum + 1; j++)
+            t[i][j] = (arr[i-1] <= j) ? ((t[i-1][j - arr[i-1]]) || (t[i-1][j])) : t[i-1][j];
             
-            if(arr[i-1] <= j)
-                t[i][j] = (t[i-1][j - arr[i-1]]) || (t[i-1][j]);
-            else // arr[i-1] > j
-                t[i][j] = t[i-1][j];
-        }
-    }
     return t[n][sum];
 }
 

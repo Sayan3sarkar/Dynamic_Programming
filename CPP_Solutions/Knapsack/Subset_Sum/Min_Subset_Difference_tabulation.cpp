@@ -21,16 +21,10 @@ int minSubsetSumDifference(int arr[], int n){
         t[0][j] = false; // Fill first row except first element with false
         
     // Main iterative code
-    for(int i = 1; i< n+1 ; i++){
+    for(int i = 1; i< n+1 ; i++)
         // for(int j = 1; j< Range + 1; j++){ // Original subsetSum Loop
-        for(int j = 1; j< (Range/2) + 1; j++){ // In this case, Consrtuct matrix till Range/2 since S1 value won't be beyond it
-            
-            if(arr[i-1] <= j)
-                t[i][j] = (t[i-1][j - arr[i-1]]) || (t[i-1][j]);
-            else // arr[i-1] > j
-                t[i][j] = t[i-1][j];
-        }
-    }
+        for(int j = 1; j< (Range/2) + 1; j++) // In this case, Consrtuct matrix till Range/2 since S1 value won't be beyond it
+            t[i][j] = (arr[i-1] <= j) ? ((t[i-1][j - arr[i-1]]) || (t[i-1][j])) : t[i-1][j];
         
     // Main iterative code
     int minDiff = INT_MAX;

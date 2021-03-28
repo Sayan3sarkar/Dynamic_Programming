@@ -18,10 +18,7 @@ def minSubsetSumDifference(arr, n):
     for i in range(1,n+1):
         # for j in range(1,Range + 1): # Original subsetSum Loop
         for j in range(1,(Range//2) + 1): # In this case, Consrtuct matrix till Range/2 since S1 value won't be beyond it
-            if(arr[i-1] <= j):
-                t[i][j] = (t[ i - 1 ][ j - arr[ i - 1 ]]) or (t[i-1][j])
-            else: # if(arr[i-1]>j)
-                t[i][j] = t[i-1][j]
+            t[i][j] = ((t[ i - 1 ][ j - arr[ i - 1 ]]) or (t[i-1][j])) if (arr[i-1] <= j) else t[i-1][j]
 
     # Main iterative code
     minDiff = sys.maxsize # Equivalent to INT_MAX in C/C++

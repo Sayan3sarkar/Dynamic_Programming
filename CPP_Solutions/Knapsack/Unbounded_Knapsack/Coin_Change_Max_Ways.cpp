@@ -14,15 +14,10 @@ int coinChangeMaxWays(int coin[], int Sum, int n) {
         t[0][j] = 0; // Fill first row except first element with false
         
     // Main iterative code
-    for(int i = 1; i< n+1 ; i++){
-        for(int j = 1; j< Sum + 1; j++){
-            
-            if(coin[i-1] <= j)
-                t[i][j] = t[i-1][j] + t[i][j - coin[i-1]];
-            else // arr[i-1] > j
-                t[i][j] = t[i-1][j];
-        }
-    }
+    for(int i = 1; i< n+1 ; i++)
+        for(int j = 1; j< Sum + 1; j++)
+            t[i][j] = (coin[i-1] <= j) ? (t[i-1][j] + t[i][j - coin[i-1]]) : t[i-1][j];
+
     return t[n][Sum];
     
 }
