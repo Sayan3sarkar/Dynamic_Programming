@@ -21,3 +21,9 @@ According to educative.io,
         * Rod Cutting(Literally Unbounded knapsack but with another name)
         * Coin Change: Max number of ways(Unbounded knapsack version of ***Count of Subsets with given sum*** problem)
         * Coin change: Min number of coins
+
+2. **Longest Common Subsequence(LCS)**
+    * **LCS** at it's very basic form
+        * Recursive
+        * Memoization(Top-Down approach)
+        * Tabulation(Bottom-Up approach)
