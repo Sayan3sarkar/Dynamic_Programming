@@ -1,6 +1,6 @@
 # Given constraints W<= 1002 and n<=102
-t = [[-1 for i in range(102)] for j in range(1002)]
 def knapSackDP( wt, val, W, n):
+    t = [[-1 for j in range(W+1)] for i in range(n+1)]
     if (n==0 or W ==0):
         return 0
     elif (t[n][W] != -1):
