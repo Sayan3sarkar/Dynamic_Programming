@@ -4,7 +4,7 @@ using namespace std;
 
 // Considering Constraints n<=100 and W<=1000
 
-int knapsackDP(int wt[], int val[], int W, int n) {
+int unboundedKnapsackDP(int wt[], int val[], int W, int n) {
     
     int t[n+1][W+1];
     
@@ -28,7 +28,7 @@ int main()
     int val[] = { 60, 100, 120 };
     int W = 50;
     int n = sizeof(val) / sizeof(val[0]);
-    cout << knapsackDP(weight, val, W, n);
+    cout << unboundedKnapsackDP(weight, val, W, n);
 
     return 0;
 }

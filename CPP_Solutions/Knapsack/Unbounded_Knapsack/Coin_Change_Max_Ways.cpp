@@ -9,9 +9,9 @@ int coinChangeMaxWays(int coin[], int Sum, int n) {
     int t[n+1][Sum+1];
     
     for(int i = 0; i< n+1; i++)
-        t[i][0] = 1; // Fill First column with true
+        t[i][0] = 1; // Fill First column with 1
     for(int j = 1; j < Sum + 1; j++)
-        t[0][j] = 0; // Fill first row except first element with false
+        t[0][j] = 0; // Fill first row except first element with 0
         
     // Main iterative code
     for(int i = 1; i< n+1 ; i++)
