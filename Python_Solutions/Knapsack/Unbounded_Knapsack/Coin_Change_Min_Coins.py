@@ -7,10 +7,6 @@ def coinChangeMinCoins(coin, Sum, n):
     # initialisation of first column with zero
     for i  in range(n+1):
         t[i][0] = 0
-    # Initialise first row excluding first element as sys.maxsize - 1(this loop is not necessary as already all elements 
-    # of matrix exlcuding the one's in the previous loop is zero)
-    # for j in range(1, Sum + 1):
-    #     t[0][j] = sys.maxsize - 1
 
     for i in range(1,n+1):
         for j in range(1,Sum+1):

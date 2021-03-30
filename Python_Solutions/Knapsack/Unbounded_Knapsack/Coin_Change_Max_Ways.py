@@ -13,7 +13,7 @@ def coinChangeMaxWays(coin, Sum, n):
     # Main Iterative code
     for i in range(1,n+1):
         for j in range(1, Sum+1):
-            t[i][j] = ((t[i][ j - coin[ i - 1 ]]) + (t[i-1][j])) if (coin[i-1] <= j) else t[i-1][j]
+            t[i][j] = (t[i][ j - coin[ i - 1 ]] + t[i-1][j]) if (coin[i-1] <= j) else t[i-1][j]
 
     return t[n][Sum]
 
