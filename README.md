@@ -28,7 +28,8 @@ According to educative.io,
         * Memoization(Top-Down approach)
         * Tabulation(Bottom-Up approach)
     * **Longest Common Substring**
-    * **Shortest Common SuperSequence**
+    * **Shortest Common SuperSequence(SCS)**
+    * **Print SCS**
     * **Minimum number of insertion and deletion to convert one string to another**
     * **Palindromic Subsequence** problems:
         * Longest Palindromic Subsequence(LPS)

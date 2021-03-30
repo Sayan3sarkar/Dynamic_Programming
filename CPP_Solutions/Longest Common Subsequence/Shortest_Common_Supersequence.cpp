@@ -26,7 +26,7 @@ int main()
     char x[] = "aggtab";
     char y[] ="gxtxayb";
     int n = (sizeof(x) / sizeof(x[0])) - 1;
-    int m = (sizeof(y) / sizeof(y[0])) - 1;\
+    int m = (sizeof(y) / sizeof(y[0])) - 1;
     cout << shortestCommonSuperSequence(x,y,n,m);
     return 0;
 }
