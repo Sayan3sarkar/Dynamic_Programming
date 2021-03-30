@@ -31,6 +31,7 @@ According to educative.io,
     * **Shortest Common SuperSequence(SCS)**
     * **Print SCS**
     * **Minimum number of insertion and deletion to convert one string to another**
+    * **Longest Repeating Subsequence(LRS)**
     * **Palindromic Subsequence** problems:
         * Longest Palindromic Subsequence(LPS)
         * Min number of deletions for a string to become a palindrome(Ans: len(string) - result of LPS)
