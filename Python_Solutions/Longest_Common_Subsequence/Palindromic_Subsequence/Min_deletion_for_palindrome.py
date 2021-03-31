@@ -14,3 +14,4 @@ def LPS_DP(x,n):
 x = "agbcba"
 n = len(x)
 print(n - LPS_DP(x,n))
+# Min number of insertion to make a string palindrome is also the same code

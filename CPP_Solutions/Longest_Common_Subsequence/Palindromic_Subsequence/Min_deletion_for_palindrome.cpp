@@ -35,3 +35,4 @@ int main()
     cout << "Min deletion: "<< n -LPS_DP(x,n);
     return 0;
 }
+// Min number of insertion to make a string palindrome is also the same code
