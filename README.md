@@ -35,3 +35,4 @@ According to educative.io,
     * **Palindromic Subsequence** problems:
         * Longest Palindromic Subsequence(LPS)
         * Min number of deletions for a string to become a palindrome(Ans: len(string) - result of LPS)
+    * **Sequence Matching Pattern**
