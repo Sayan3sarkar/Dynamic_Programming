@@ -25,7 +25,7 @@ int LPS_DP(string x, int n){
     strcpy(s1, x_origin.c_str());
     strcpy(s2, x.c_str());
     
-    return LCS_DP(s1, s2, n, n);
+    return LCS_DP(s1, s2, n, n); //LCS of original string and reversed string
 }
 
 int main() 

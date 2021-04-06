@@ -30,9 +30,15 @@ According to educative.io,
     * **Longest Common Substring**
     * **Shortest Common SuperSequence(SCS)**
     * **Print SCS**
+    * **Print LCS**
     * **Minimum number of insertion and deletion to convert one string to another**
     * **Longest Repeating Subsequence(LRS)**
     * **Palindromic Subsequence** problems:
         * Longest Palindromic Subsequence(LPS)
         * Min number of deletions(same result for minimum insertions) for a string to become a palindrome(Ans: len(string) - result of LPS)
     * **Sequence Matching Pattern**
+
+3. **Matrix Chain Multiplication(MCM)**
+    * **MCM** basics
+        * Recursive
+        * Memoization(Top-Down approach)
