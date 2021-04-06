@@ -9,12 +9,11 @@ int MCM_Memoization(int arr[], int i, int j){
     if(t[i][j] != -1)
      return t[i][j];
     t[i][j]= INT_MAX;
-    for(int k = i; k < j; k++){
+    for(int k = i; k < j; k++)
         t[i][j] = std::min(
                 t[i][j],
                 MCM_Memoization(arr, i, k) + MCM_Memoization(arr, k + 1, j) + arr[i - 1]*arr[k]*arr[j]
             );
-    }
     return t[i][j];
 }
 

@@ -1,6 +1,7 @@
 import sys
-t = [[-1 for j in range(1001)] for i in range(1001)] #Given constraints  i & j <=1000
+
 def MCM_Memoization(arr, i, j):
+    t = [[-1 for y in range(j+1)] for x in range(i+1)]
     if(i>=j):
         return 0
     if(t[i][j] != -1):
