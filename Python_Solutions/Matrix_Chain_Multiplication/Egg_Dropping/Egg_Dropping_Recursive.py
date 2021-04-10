@@ -7,11 +7,11 @@ def eggDrop(e,f):
     ans = sys.maxsize
 
     for k in range(1, f+1):
-        ans = min(ans, max(
+        ans = min(ans, 1 + max(
             eggDrop(e - 1, k - 1),
             eggDrop(e, f - k)
         ))
-    return ans + 1
+    return ans
 
 n = 3
 f = 5

@@ -11,14 +11,14 @@ int eggDrop(int e, int f)
  
     int ans = INT_MAX, temp;
     for (int k = 1; k <= f; k++) {
-        temp = std::max(
+        temp = 1+ std::max(
             eggDrop(e - 1, k - 1),
             eggDrop(e, f - k)
         );
         ans = std::min(ans, temp);
     }
  
-    return ans + 1;
+    return ans;
 }
 
 int main()
