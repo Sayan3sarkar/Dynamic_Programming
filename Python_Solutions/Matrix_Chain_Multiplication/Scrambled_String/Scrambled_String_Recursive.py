@@ -12,7 +12,7 @@ def Scrambled_String_Recursive(a,b):
     if(len(a) < 1): # Only 1 string is empty
         return False
 
-    n = len(a)
+    # n = len(a)
     for i in range(1,n):
         cond1 = (Scrambled_String_Recursive(a[:i], b[-i:])) and (Scrambled_String_Recursive(a[i:], b[:-i]))
         cond2 = (Scrambled_String_Recursive(a[:i], b[:i])) and (Scrambled_String_Recursive(a[i:], b[i:]))
