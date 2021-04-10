@@ -23,10 +23,7 @@ def eggDrop_Memoization(e,f):
             high = eggDrop_Memoization(e, f - k)
             t[e][f - k] = high
             
-        ans = min(ans, 1 + max(
-            eggDrop_Memoization(e - 1, k - 1),
-            eggDrop_Memoization(e, f - k)
-        ))
+        ans = min(ans, 1 + max(low, high))
     t[e][f] = ans
     return t[e][f]
 
